@@ -2,6 +2,8 @@
   1 根据一下说明 完善JavaScript代码和测试用例
   2 如何在VS Code中进行编写 运行 通过
   3 参考 add测试用例，补充一些set测试用例
+  4 javaScrip文件 使用 *.mjs风格
+  5 输出结果与测试结果要保持一致
 
 
 
@@ -9,9 +11,8 @@ Intensity Segments
  					
 Guidelines 
  					
-In this part of the interview process, we’d like you to come up with an algorithm to solve the problem as described below. The problem itself is quite simple to solve. What we are mainly looking for in this test (other than that the solution should work) is, how well you actually write the code. We want to see how you write production-quality code in a team setting where multiple developers will be collaborating on the 
- 					
-codebase.
+In this part of the interview process, we’d like you to come up with an algorithm to solve the problem as described below. The problem itself is quite simple to solve. What we are mainly looking for in this test (other than that the solution should work) is, how well you actually write the code. We want to see how you write production-quality code in a team setting where multiple developers will be collaborating on the codebase.
+
 Specifically, we are looking for: simple, clean, readable and maintainable code, for example: 
  					
 • Code organization and submission format. Things like code organization, readability, documentation, testing and deliverability are most important here. 
@@ -45,7 +46,8 @@ toString() {
 } }
 
 // Here is an example sequence:
-// (data stored as an array of start point and value for each segment.) const segments = new IntensitySegments();
+// (data stored as an array of start point and value for each segment.) 
+const segments = new IntensitySegments();
 segments.toString(); // Should be "[]"
 segments.add(10, 30, 1);
 segments.toString(); // Should be: "[[10,1],[30,0]]"
@@ -53,8 +55,10 @@ segments.add(20, 40, 1);
 segments.toString(); // Should be: "[[10,1],[20,2],[30,1],[40,0]]"
 segments.add(10, 40, -2);
 segments.toString(); // Should be: "[[10,-1],[20,0],[30,-1],[40,0]]"
+
 // Another example sequence:
-const segments = new IntensitySegments(); segments.toString(); // Should be "[]"
+const segments = new IntensitySegments(); 
+segments.toString(); // Should be "[]"
 segments.add(10, 30, 1);
 segments.toString(); // Should be "[[10,1],[30,0]]"
 segments.add(20, 40, 1);
