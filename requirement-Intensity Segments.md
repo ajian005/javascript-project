@@ -5,7 +5,6 @@
 
 
 
- 					
 Intensity Segments 
  					
 Guidelines 
